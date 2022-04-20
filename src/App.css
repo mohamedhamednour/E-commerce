@@ -1,0 +1,90 @@
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid rgb(206, 212, 206);
+  padding: 30px;
+  color: rgb(68, 0, 255);
+}
+.center button{
+  width: 100%;
+}
+.center h5 , Link{
+  color: rgb(4, 10, 58) !important;
+}
+
+.navbar-nav{
+  text-align: right;
+}
+
+
+.navbar{
+  color: rgb(241, 36, 9) ;
+
+}
+img{
+  width: 70%;
+  height: 50%;
+}
+#dark{
+  display: none;
+}
+.imgss{
+  padding: 20px 20px;
+  border: 1px solid burlywood;
+  
+}
+ul{
+  list-style: none;
+  text-decoration: none;
+
+}
+.link ,.navbar-brand,.nav-link{
+  text-decoration: none;
+  color: red !important;
+  font-size: 30px;
+}
+h5{
+  color: rgb(128, 167, 167) !important;
+}
+.container-fluid{
+  color: aliceblue;
+}
+p{
+  color: rgb(18, 135, 212);
+  font-size: 25px;
+}
+.backgro{
+height: 350px;
+background-image: url('./img/photo-1483985988355-763728e1935b.jpeg');  
+background-repeat: no-repeat;
+background-size: 100% 100%;
+top: 0px;
+}
+.footers{
+  height: 300px;
+background-image: url('./img/photo-1592839930500-3445eb72b8ad.jpeg');  
+background-repeat: no-repeat;
+background-size: 100% 100%;
+top: 0px;
+
+}
+.tiltes{
+  font-size: 70px;
+  padding: 20px;
+  color:red
+}
+span{
+  color:rgb(68, 0, 255);
+}
+.colors{
+  color: rgb(243, 77, 77);
+  font-size: 25px;
+  padding: 20px;
+}
+h3{
+  color: blueviolet;
+
+}
+.cards{
+  padding: 10px !important;
+}

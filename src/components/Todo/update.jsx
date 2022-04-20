@@ -3,27 +3,27 @@ import { useParams, Navigate, useNavigate } from "react-router-dom";
 
 import ky from 'ky';
 
+ 
+
 
 const Update = () => {
   const { id } = useParams();
   // const dispatch = useDispatch();
   const [detils , setdetils] = React.useState([])  //vlaue image
 
+  const { isLoading, error, data } = get_databyid('repoData', () =>
+   ky('', {prefixUrl: `http://127.0.0.1:8000/shoping/${id}`}).json()
+  
+
+)
 
   
-//function get data by id and pass vlaue in input 
-  const get_databyid = async () => {
-    const data = await ky('', {prefixUrl: `https://fakestoreapi.com/products/${id}`}).json()
-    setdetils(data);
- 
-    console.log(data)
 
-  };
 
 
 
   React.useEffect(() => {
-    get_databyid();  //call function 
+   
     
   }, []);
   return (
@@ -32,7 +32,7 @@ const Update = () => {
     <div className="countainer">
       <div className="row">
         <div className="col-12">
-          <span>{detils.title}</span>
+          <span>{detils.name}</span>
 
         </div>
         <div className="col-12 col-md-6"><span>{detils.description}</span></div>
