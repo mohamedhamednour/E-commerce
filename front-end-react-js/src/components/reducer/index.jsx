@@ -11,7 +11,7 @@ import {
 
 //base ur
 
-const urlAPi = "http://127.0.0.1:8000/shoping/";
+const baseUrl = "https://fakestoreapi.com/products";
 //createAsyncThunk get data from api 
  
 //#region get 
@@ -22,7 +22,7 @@ export const todoapis = createAsyncThunk(
   async (args, thankAPI) => {
     const { RejectWithValue } = thankAPI;
     try {
-      return await axios(urlAPi).then((res) => {
+      return await axios(baseUrl).then((res) => {
         const data = res.data;
         console.log(data);
         return data;
@@ -42,7 +42,7 @@ export const postdata = createAsyncThunk(
     const { RejectWithValue } = thankAPI;
     try {
       await axios
-        .post(urlAPi, addData, {
+        .post(baseUrl, addData, {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },

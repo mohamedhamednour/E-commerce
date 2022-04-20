@@ -8,7 +8,6 @@ import { PrivateRoute } from "../src/components/auth/provideroute";
 import { AuthProvider } from "../src/components/auth/usecontext";
 import { Route, Routes } from "react-router-dom";
 import Phone from "./components/auth/authphone";
-import Create from "./components/Todo/create";
 import Update from "./components/Todo/update";
 import { Shoping } from "./components/Todo/shoping";
 import ForgotPassword from "./components/Todo/forget-password";
@@ -44,7 +43,7 @@ function App() {
               </PrivateRoute>
             } */}
           {/* /> */}
-          <Route path="/create" element={<Create />} />
+         
           <Route path="/" element={<Shoping />} />
         </Routes>
       </AuthProvider>

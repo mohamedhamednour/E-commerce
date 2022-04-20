@@ -4,8 +4,11 @@ import { Link} from "react-router-dom";
 
 import { todoapis, deleteitem } from "../reducer/index";
 import { useSelector, useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 export const Shoping = () => {
+  const [t, i18n] = useTranslation()
+
   const dispatch = useDispatch(); 
   const { isloading, books, error } = useSelector((state) => state.apiSlice); 
 
@@ -26,7 +29,7 @@ export const Shoping = () => {
         <div className="backgro">
 
 
-          <h1 className="tiltes">Boutique</h1>
+          <h1 className="tiltes">{t('Boutique')}</h1>
         </div>
         
           <br />
