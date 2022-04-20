@@ -9,7 +9,15 @@ const Update = () => {
   // const dispatch = useDispatch();
   const [detils , setdetils] = React.useState([])  //vlaue image
 
+  const [detilas , setdetilss] = React.useState([])  //vlaue image
 
+  const get_databyids = async () => {
+    const dataa = await ky('', {prefixUrl: `https://fakestoreapi.com/products/${id}`}).json()
+    setdetilss(dataa);
+ 
+    console.log(dataa)
+
+  };
   
 //function get data by id and pass vlaue in input 
   const get_databyid = async () => {
@@ -23,6 +31,7 @@ const Update = () => {
 
 
   React.useEffect(() => {
+    get_databyids()
     get_databyid();  //call function 
     
   }, []);
