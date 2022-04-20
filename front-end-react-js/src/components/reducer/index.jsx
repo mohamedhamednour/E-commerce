@@ -11,7 +11,7 @@ import {
 
 //base ur
 
-const baseUrl = "https://fakestoreapi.com/products";
+const baseUrl = "https://fakestoreapi.com/products/";
 //createAsyncThunk get data from api 
  
 //#region get 
