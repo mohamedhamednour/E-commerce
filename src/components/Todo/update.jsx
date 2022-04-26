@@ -25,21 +25,24 @@ const Update = () => {
   React.useEffect(() => {
     get_databyid();  //call function 
     
-  }, []);
+  }, [detils]);
   return (
     <>
 
-    <div className="countainer">
+    <div className="container-fluid">
       <div className="row">
-        <div className="col-12">
+        <div align='center' className="col-12 justify-content-center ">
           <span>{detils.title}</span>
 
-        </div>
-        <div className="col-12 col-md-6"><span>{detils.description}</span></div>
-
-        <div align='center' className="col-12 col-md-6">
+        </div><br /><br />
+        <div  className="col-12 col-md-4">
           <img src={detils.image} alt="" />
         </div>
+        <div className="col-12 col-md-4"><span>{detils.description}</span></div>
+        <div className="col-12 col-md-4"><span>price :{detils.price}</span></div>
+        
+        
+        
 
 
 <div className="col-12">
