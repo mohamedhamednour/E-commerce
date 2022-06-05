@@ -16,7 +16,9 @@ function App() {
 
 
   return (
+    
     <div className="App">
+     
       <AuthProvider>
         <Navbar />
         <pre></pre>
